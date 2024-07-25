@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        base(href="/")
+        link(rel="stylesheet", type="text/css", href="/views/style.css")
+        title Dashboard
+    body
+      include header.pug
+
+
+      main.main_container  
+       div.container
+        h2.main_title Hello Evano 👋🏼,
+
+        div.table_container 
+         div.table_title_container 
+          div
+           h3.table_title All Customers
+           p.table_descr Active Members
+          div 
+           input(type="text" placeholder="Search").table_input
+         table 
+           tr 
+            th.table_header Customer Name
+            th.table_header Company
+            th.table_header Phone Number
+            th.table_header Email
+            th.table_header Country
+            th.table_header Status    
+           tr.table_info 
+
+         div.main_footer_container
+          p.main_footer_info Showing data 1 to 8 of  256K entries
+          ul.main_footer_list 
+           li.load-more 
+            img(src="/img/arrowLeft.png", alt="arrow left").load-more_arrow
+           li.load-more.load-more_js.active
+            p.load-more_num.load-more_title_js.active 1
+           li.load-more.load-more_js
+            p.load-more_num.load-more_title_js 2
+           li.load-more.load-more_js 
+            p.load-more_num.load-more_title_js 3
+           li.load-more.load-more_js
+            p.load-more_num.load-more_title_js 4
+           li.load-more.load-more_js
+            p.load-more_num.load-more_title_js ...
+           li.load-more.load-more_js
+            p.load-more_num.load-more_title_js 40
+           li.load-more 
+            img(src="/img/arrow_right.png", alt="arrow right").load-more_arrow
+
+      script(src="/js.js" )

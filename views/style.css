@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+}
+
+/* ===========HEADER=========== */
+
+.header_title {
+  font-weight: 700;
+  font-size: 26px;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+.header_title span {
+  font-weight: 400;
+  font-size: 10px;
+  color: #838383;
+}
+
+.header_nav_title {
+  display: flex;
+  align-items: center;
+  color: #9197b3;
+}
+
+.header_item {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  color: #9197b3;
+  border-radius: 8px;
+  margin-top: 40px;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.header_item_arrow {
+  margin-left: auto;
+}
+
+.header_footer_img {
+  margin-right: 12px;
+}
+
+.header_footer_title {
+  font-weight: 400;
+  font-size: 12px;
+  color: #757575;
+}
+
+.icon_hero {
+  width: 37px;
+  height: 37px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+
+/* ===========MAIN=========== */
+
+.table_header {
+  font-weight: 500;
+  color: #b5b7c0;
+}
+
+.table_title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+
+.table_descr {
+  font-weight: 400;
+  color: #16c098;
+  margin-bottom: 40px;
+}
+
+.table_input {
+  max-width: 216px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #f9fbff;
+}
+
+.main_footer_list {
+  display: flex;
+  align-items: center;
+}
+
+.load-more {
+  height: 24px;
+  width: 25px;
+  background-color: #f5f5f5;
+  color: #000000;
+  border-radius: 4px;
+  padding: 6px 9px;
+  cursor: pointer;
+}
+
+.load-more:not(:first-child) {
+  margin-left: 12px;
+}
+
+.load-more_num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load-more_arrow {
+  margin: auto;
+  margin-top: 8px;
+}
+
+.load-more_js.active {
+  background-color: #5932ea;
+}
+
+.load-more_title_js.active {
+  color: #ffffff;
+}
+
+.active_status {
+  background-color: #008767;
+  color: #095543;
+  padding: 4px 18px;
+  border-radius: 4px;
+}
+
+.inactive_status {
+  background-color: #df0404;
+  color: #990707;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+
+ /* ====================375=================== */
+@media screen and (min-width: 375px) {
+  .container {
+    width: 335px;
+    padding: 15px 20px;
+  }
+
+  body.active {
+    background-color: #b5b7c0;
+  }
+
+  body.active .table_container {
+    background-color: transparent;
+  }
+
+  /* ===========HEADER=========== */
+  .header_nav_title {
+    cursor: pointer;
+  }
+
+  .header_title_container {
+    position: relative;
+    display: flex;
+    margin-bottom: 120px;
+  }
+
+  .header_list {
+    display: none;
+  }
+
+  .header_list.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 45%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .header_footer_container {
+    position: absolute;
+    top: 60px;
+  }
+
+  /* ===========MAIN=========== */
+  .table_title_container {
+    display: block;
+  }
+
+  .table_container {
+    width: 100%;
+    border-radius: 30px;
+    margin: auto;
+    background-color: #ffffff;
+  }
+
+  table {
+    width: 768px;
+    height: 75vh;
+  }
+
+  th {
+    font-size: 14px;
+    border-bottom: solid 1px #d9d9d9;
+    padding: 14px;
+  }
+
+  .tb_name {
+    font-size: 14px;
+    border-bottom: solid 1px #d9d9d9;
+    padding: 14px;
+  }
+
+  .main_footer_container {
+    display: block;
+    margin-top: 32px;
+  }
+
+  .main_footer_info {
+    font-weight: 500;
+    color: #b5b7c0;
+    margin-bottom: 20px;
+  }
+
+  input {
+    margin-bottom: 25px;
+  }
+}
+
+ /* ====================768=================== */
+@media screen and (min-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .container {
+    width: 768px;
+    padding: 35px 15px;
+    margin: 0 auto;
+  }
+
+  /* ===========HEADER=========== */
+  .header_nav_title {
+    cursor: none;
+    pointer-events: none;
+  }
+
+  .header_title_container {
+    margin-bottom: 50px;
+  }
+
+  .header_list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header_footer_container {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    margin-top: -205px;
+  }
+
+
+  /* ===========MAIN=========== */
+  .table_title_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  th {
+    font-size: 12px;
+    border-bottom: solid 1px #d9d9d9;
+    padding: 4px;
+  }
+
+  .tb_name {
+    font-size: 12px;
+    border-bottom: solid 1px #d9d9d9;
+    padding: 4px;
+  }
+
+  .main_container {
+    margin-top: 150px;
+  }
+
+  .main_title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .main_footer_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+
+  .main_footer_info {
+    font-weight: 500;
+    color: #b5b7c0;
+    margin-bottom: 0;
+  }
+}
+
+ /* ====================1200=================== */
+@media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-width: 1140px;
+    min-height: 125vh;
+  }
+
+  /* ===========HEADER=========== */
+  .header_container {
+    max-width: 306px;
+    margin-left: 15px;
+  }
+
+  .header_title_container {
+    margin-bottom: 70px;
+  }
+
+  .header_list {
+    display: block;
+    justify-content: left;
+  }
+
+  .header_footer_container {
+    display: flex;
+    justify-content: left;
+    margin-top: auto;
+  }
+
+  /* ===========MAIN=========== */
+  .table_container {
+    max-width: 970px;
+
+    padding: 30px 30px 40px 30px;
+  }
+
+  table {
+    width: 100%;
+    margin-left: -15px;
+  }
+
+  th {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .tb_name {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .main_container {
+    width: 100%;
+    background-color: #d9d9d9;
+    margin-top: 0;
+  }
+
+  .main_title {
+    margin-left: 5%;
+  }
+
+  input {
+    margin-bottom: 0;
+  }
+}
