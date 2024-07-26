@@ -3,7 +3,6 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        base(href="/")
         link(rel="stylesheet", type="text/css", href="/views/style.css")
         title Dashboard
     body
@@ -36,18 +35,18 @@ html(lang="en")
           ul.main_footer_list 
            li.load-more 
             img(src="/img/arrowLeft.png", alt="arrow left").load-more_arrow
-           li.load-more.load-more_js.active
-            p.load-more_num.load-more_title_js.active 1
-           li.load-more.load-more_js
-            p.load-more_num.load-more_title_js 2
-           li.load-more.load-more_js 
-            p.load-more_num.load-more_title_js 3
-           li.load-more.load-more_js
-            p.load-more_num.load-more_title_js 4
-           li.load-more.load-more_js
-            p.load-more_num.load-more_title_js ...
-           li.load-more.load-more_js
-            p.load-more_num.load-more_title_js 40
+           li.load-more
+            button.load-more_title.active 1
+           li.load-more
+            button.load-more_title 2
+           li.load-more
+            button.load-more_title 3
+           li.load-more
+            button.load-more_title 4
+           li.load-more
+            button.load-more_title ...
+           li.load-more
+            button.load-more_title 40
            li.load-more 
             img(src="/img/arrow_right.png", alt="arrow right").load-more_arrow
 

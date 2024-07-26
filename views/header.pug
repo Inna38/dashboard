@@ -15,31 +15,30 @@ header.header_container
       
   nav
     ul.header_list 
-      li.header_item.load-more_js 
+      li.header_item.load-more
        svg.icon
-        use(href="symbol-defs.svg#d-square")
-       a(href="/Compiled-HTML/views/product.html") Product
-       p.load-more_title_js Product
+        use(href="/symbol-defs.svg#d-square")
+       a(href="#") Product
        img(src="/img/arrow_right.png", alt="arrow").header_item_arrow
 
-      li.header_item.load-more_js.active 
+      li.header_item.load-more.active 
        img(src="/img/userSquare.png", alt="user").icon
-       p.load-more_title_js.active Customers
-       img(src="/img/arrow_right.png", alt="arrow").header_item_arrow
-      li.header_item.load-more_js 
+       a(href="#").load-more_title.active Customers
+       img(src="/img/arrow_right.png", alt="arrow").header_item_arrow 
+      li.header_item.load-more
        svg.icon 
         use(href="/symbol-defs.svg#wallet-money")
-       p.load-more_title_js Income
+       a(href="#") Income
        img(src="/img/arrow_right.png", alt="arrow").header_item_arrow
-      li.header_item.load-more_js 
+      li.header_item.load-more
        svg.icon 
         use(href="/symbol-defs.svg#discount-shape")
-       p.load-more_title_js Promote
+       a(href="#") Promote
        img(src="/img/arrow_right.png", alt="arrow").header_item_arrow
-      li.header_item.load-more_js 
+      li.header_item.load-more 
        svg.icon 
         use(href="/symbol-defs.svg#message-question")
-       p.load-more_title_js Help
+       a(href="#") Help
        img(src="/img/arrow_right.png", alt="arrow").header_item_arrow
           
   div.header_footer_container 

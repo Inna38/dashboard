@@ -1,22 +1,7 @@
 const table_info = document.querySelector(".table_info");
-const load_more = document.querySelectorAll(".load-more_js");
-const load_more_title = document.querySelectorAll(".load-more_title_js");
 const header_nav_title = document.querySelector(".header_nav_title");
 const header_list = document.querySelector(".header_list");
 const body = document.querySelector("body");
-
-load_more.forEach((element) => {
-  element.addEventListener("click", () => {
-    element.classList.toggle("active");
-  });
-});
-
-load_more_title.forEach((element) => {
-  element.addEventListener("click", () => {
-    element.classList.toggle("active");
-  });
-});
-
 
 header_nav_title.addEventListener("click", onHeaderNavClick);
 
