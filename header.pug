@@ -1,0 +1,48 @@
+header.header_container
+ div.container
+  div.header_title_container 
+   svg.icon_hero 
+    use(href="./symbol-defs.svg#setting")
+  
+   h1.header_title Dashboard
+     span  v.01
+     
+  div.header_nav_title 
+   svg.icon 
+    use(href="./symbol-defs.svg#key-square")
+
+   p Dashboard
+      
+  nav
+    ul.header_list 
+      li.header_item.load-more
+       svg.icon
+        use(href="./symbol-defs.svg#d-square")
+       a(href="#") Product
+       img(src="./img/arrow_right.png", alt="arrow").header_item_arrow
+
+      li.header_item.load-more.active 
+       img(src="./img/userSquare.png", alt="user").icon
+       a(href="#").load-more_title.active Customers
+       img(src="./img/arrow_right.png", alt="arrow").header_item_arrow 
+      li.header_item.load-more
+       svg.icon 
+        use(href="./symbol-defs.svg#wallet-money")
+       a(href="#") Income
+       img(src="./img/arrow_right.png", alt="arrow").header_item_arrow
+      li.header_item.load-more
+       svg.icon 
+        use(href="./symbol-defs.svg#discount-shape")
+       a(href="#") Promote
+       img(src="./img/arrow_right.png", alt="arrow").header_item_arrow
+      li.header_item.load-more 
+       svg.icon 
+        use(href="./symbol-defs.svg#message-question")
+       a(href="#") Help
+       img(src="./img/arrow_right.png", alt="arrow").header_item_arrow
+          
+  div.header_footer_container 
+   img(src="./img/evano.png", alt="evano_photo").header_footer_img
+   div
+    h2 Evano
+    p.header_footer_title Project Manager

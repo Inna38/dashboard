@@ -3,7 +3,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", type="text/css", href="/views/style.css")
+        link(rel="stylesheet", type="text/css", href="./style.css")
         title Dashboard
     body
       include header.pug
@@ -34,7 +34,7 @@ html(lang="en")
           p.main_footer_info Showing data 1 to 8 of  256K entries
           ul.main_footer_list 
            li.load-more 
-            img(src="/img/arrowLeft.png", alt="arrow left").load-more_arrow
+            img(src="./img/arrowLeft.png", alt="arrow left").load-more_arrow
            li.load-more
             button.load-more_title.active 1
            li.load-more
@@ -48,6 +48,6 @@ html(lang="en")
            li.load-more
             button.load-more_title 40
            li.load-more 
-            img(src="/img/arrow_right.png", alt="arrow right").load-more_arrow
+            img(src="./img/arrow_right.png", alt="arrow right").load-more_arrow
 
-      script(src="/js.js" )
+      script(src="./js.js" )
